@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics - College Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: rgba(0, 51, 102, 0.9);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: static;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://example.com/new-background.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .content {
+      padding: 60px 20px;
+      background-color: white;
+    }
+    .content h2 {
+      color: #003366;
+    }
+    .content-cards {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .card {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 45%;
+    }
+    footer {
+      background-color: rgba(0, 51, 102, 0.9);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: static;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar ul li a {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .navbar ul li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(0, 174, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+  }
+
+  .navbar ul li a:hover::before {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li class="liquid"><img src="https://media.istockphoto.com/id/1124414832/vector/logo-college-academy-university-school-emblem.jpg?s=612x612&w=0&k=20&c=KplV_FF3tzMgGuOtgN1DAmz2PqJQ4Yp2P0yZpZ8llHs=" alt="KES Shroff College Logo"></li>
+        <li class="liquid"><nav>
+          <h4>Buddha Institute of Technology, GIDA, Gorakhpur</h4>
+          <h4>बुद्धा इंस्टिट्यूट ऑफ़ टेक्नोलॉजी, गीडा, गोरखपुर </h4>
+        </nav></li>
+      
+        <li><a href="index.html" class="liquid">Home</a></li>
+        <li><a href="college2.html" class="liquid">About Us</a></li>
+        <li><a href="college3.html" class="liquid">Academics</a></li>
+        <li><a href="notices.html" class="liquid">Notices</a></li>
+        <li><a href="college4.html" class="liquid">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Academics</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.v4AeEyHambd_oMgzcqLZkAHaE8&pid=Api&P=0&h=180" alt="Campus Life" style="width: 100%; max-width: 600px; height: auto;">
+    <h1>Academics</h1>
+    <p>At KES Shroff College, we offer a wide range of programs designed to meet the needs of our diverse student body. Our faculty are experts in their fields, and our facilities are second to none.</p>
+
+    <div class="content-cards">
+      <h2>Programs Offered</h2>
+      <ul>
+        <li>Bachelor of Arts (BA)</li>
+        <li>Bachelor of Science (BSc)</li>
+        <li>Bachelor of Commerce (BCom)</li>
+        <li>Master of Arts (MA)</li>
+        <li>Master of Science (MSc)</li>
+      </ul>
+    </div>
+
+    <div class="content-cards">
+      <h2>Admissions</h2>
+      <p>Learn about our admission process, eligibility criteria, and important deadlines.</p>
+    </div>
+
+    <section id="courses">
+      <h2>Our Courses</h2>
+      <ul>
+        <li>Bachelor of Commerce</li>
+        <li>Bachelor of Science (IT)</li>
+        <li>Bachelor of Management Studies</li>
+        <li>Post Graduate Programs</li>
+      </ul>
+    </section>
+
+    <section id="admissions">
+      <h2>Junior Courses Admission</h2>
+      <h3>Admission & Eligibility – Junior College (Science)</h3>
+      <p>Admission to First Year in Junior College (FYJC – Std XI) is offered following the declaration of the S.S.C. examination results by the Maharashtra State Board of Secondary & Higher Secondary Education.</p>
+
+      <h3>Admission & Eligibility – Junior College (Commerce)</h3>
+      <p>Admission to First Year in Junior College (FYJC – Std XI) for Commerce follows the same eligibility and admission process as for Science.</p>
+
+      <h3>Documents Required for Admission</h3>
+      <ul>
+        <li><strong>Statement of Marks</strong> – 2 attested copies (Original to be shown at the time of admission).</li>
+        <li><strong>School Leaving Certificate</strong> – 1 attested copy (Original to be shown at the time of admission).</li>
+        <li><strong>Caste Certificate (if applicable)</strong> – 1 attested copy (Original to be shown at the time of admission).</li>
+      </ul>
+    </section>
+
+    <h2>Contact Information</h2>
+    <p>Email: info@college.com</p>
+    <p>Phone: +91 12345 67890</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact Us: info@college.edu | Phone: +123-456-7890</p>
+    <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    <p>&copy; 2024 KES Shroff College. All rights reserved.</p>
+  </footer>
+  <script>
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.to(".navbar", {
+        scrollTrigger: {
+          trigger: ".navbar",
+          start: "top top",
+          end: "bottom center",
+          scrub: true
+        },
+        y: "random(-10, 10)",
+        ease: "sine.inOut",
+        repeat: -1,
+        yoyo: true
+      });
+    });
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - College Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: rgba(0, 51, 102, 0.9);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: static;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://example.com/new-background.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .content {
+      padding: 60px 20px;
+      background-color: white;
+    }
+    .content h2 {
+      color: #003366;
+    }
+    .content-cards {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .card {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 45%;
+    }
+    footer {
+      background-color: rgba(0, 51, 102, 0.9);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: static;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar ul li a {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .navbar ul li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(0, 174, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+  }
+
+  .navbar ul li a:hover::before {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li class="liquid"><img src="https://media.istockphoto.com/id/1124414832/vector/logo-college-academy-university-school-emblem.jpg?s=612x612&w=0&k=20&c=KplV_FF3tzMgGuOtgN1DAmz2PqJQ4Yp2P0yZpZ8llHs=" alt="KES Shroff College Logo"></li>
+        <li class="liquid"><nav>
+          <h4>Buddha Institute of Technology, GIDA, Gorakhpur</h4>
+          <h4>बुद्धा इंस्टिट्यूट ऑफ़ टेक्नोलॉजी, गीडा, गोरखपुर </h4>
+        </nav></li>
+        <li><a href="index.html" class="liquid">Home</a></li>
+        <li><a href="college2.html" class="liquid">About Us</a></li>
+        <li><a href="college3.html" class="liquid">Academics</a></li>
+        <li><a href="notices.html" class="liquid">Notices</a></li>
+        <li><a href="college4.html" class="liquid">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>About Us</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>About Us</h1>
+    <p>KES Shroff College, established in 1990, is a leading institution in Maharashtra, offering quality education in arts, science, and commerce. Our mission is to empower students with knowledge, skills, and values to succeed in a global society.</p>
+    <div class="content-cards">
+      <div class="card">
+        <h3>Our Achievements</h3>
+        <p>Ranked among the top colleges in the state for academic excellence.</p>
+      </div>
+      <div class="card">
+        <h3>Student Life</h3>
+        <p>Vibrant campus life with numerous extracurricular activities.</p>
+      </div>
+    </div>
+
+    <img src="https://tse2.mm.bing.net/th?id=OIP.0jqUbZSzecbxT5MjiV1e5AHaE7&pid=Api&P=0&h=180" alt="Campus Life" style="width: 100%; max-width: 600px; height: auto;">
+    
+    <h1>History of Our College</h1>
+    <p>Is a pioneer Educational Trust registered under society’s registration Act 1860, and public Trust Act 1950 (Mumbai). Founded in the year 1936. Organization well known for its various educational services for more than 7 decades. Spreading education to more than 9000 students. The change in socio-economic condition and on public demand it started the technical section in 1962. In 1970 it started the Night High School to provide the students opportunity to study along with service. Sangeet Mahavidyalaya started in the year 1984 to develop aesthetic aspirations of the students and youth to impart training in vocal and instrumental music. As an addition to its activities, Kandivli Education Society’s Junior college in June 1976 and upgraded it into a Degree college of Arts & Commerce in 1989. S.V.P. Jr. College Science renamed as T.P. Bhatia Jr. College of Science in 2005. Started ‘A’ Level KES’ CAMBRIDGE INTERNATIONAL JUNIOR COLLEGE (Std XI & XII) Arts, Science and Commerce.</p>
+    
+    <h1>From The Principal’s Desk</h1>
+    <p>Welcome to K E S Shroff College of Arts & Commerce, where technology, innovation, excellence come together to create a dynamic exciting and stimulating learning environment for our students. Our forte is value based education and strong and healthy student– teacher relationship. We emphasis on self discipline and character building.</p>
+    <p>To meet the broader challenges, our teachers take care as to what our students need to learn today to prepare for tomorrow. We enrich our student’s personality by encouraging their participation in curricular and extracurricular activities. We not only maintain the credibility of the examination system, but also ensure transparency and just and fair college administration by giving equal treatment to all students.</p>
+    <p>I can assure that your experience at KES’ Shroff College of Arts & Commerce will certainly culminate in achieving your academic, personal and career goals. We will continue to fire your imagination, creativity and shape your future.</p>
+    <p>Wish you Good Luck!</p>
+    <p>Dr. Lily Bhushan,<br>Principal.</p>
+    
+    <h1>Vision and Mission</h1>
+    <h2>Vision</h2>
+    <p>Our vision is to be a globally recognized institution of excellence in higher education, fostering innovation, research, and lifelong learning. We aim to empower students with knowledge, skills, and ethical values to become responsible global citizens and leaders in their respective fields. Empowering the youth to build their destiny by moulding their character and respecting their right to learn and power to earn.</p>
+    <h2>Mission</h2>
+    <p>To provide high-quality education through innovative teaching methodologies and a dynamic curriculum.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact Us: info@college.edu | Phone: +123-456-7890</p>
+      <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+      <p>&copy; 2024 KES Shroff College. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.to(".navbar", {
+        scrollTrigger: {
+          trigger: ".navbar",
+          start: "top top",
+          end: "bottom center",
+          scrub: true
+        },
+        y: "random(-10, 10)",
+        ease: "sine.inOut",
+        repeat: -1,
+        yoyo: true
+      });
+    });
+
+
+  </script>
+</body>
+</html>
